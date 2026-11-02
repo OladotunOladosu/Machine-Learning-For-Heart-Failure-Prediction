@@ -181,9 +181,13 @@ RANDOM FOREST CLASSIFIER	        0.84	           0.87
 The performance of the best model for predicting HF mortality was evaluated using the following evaluation 
 metrics:
 Accuracy: This measures the overall correctness of the model but can be misleading in imbalanced datasets. 
+
 Precision: Precision measures the proportion of true positive among all positive predictions. 
+
 Recall: Recall measures the proportion of true positive among all actual positive instances. 
-F1-Score: The harmonic mean of precision and recall, providing a single metric that balances both. 
+
+F1-Score: The harmonic mean of precision and recall, providing a single metric that balances both.
+
 AUC-ROC Curve: The area under the receiver operating characteristic curve (AUC-ROC) is used to assess the model's ability to distinguish between classes (e.g., mortality vs. survival). 
   
 
