@@ -73,5 +73,8 @@ The main objectives of this project are:
 
  1. Checked for Missing and duplicate values to ensure data quality and integrity 
  2. Validation of data types and formats to ensure compatibiity  with analytical operations
-   
-   
+
+The figure below shows the information of the dataset. It clearly indicated that there are no missing values in all the 299 entries for each column.
+
+
+
