@@ -196,7 +196,7 @@ Figure 6: Baseline Model Scores
 
 Random Forest Classifier demonstrated the highest accuracy of 0.87 and was picked to be the representation model.
 
-Figure 7: Hyperparameter Tuning
+Figure 7: Result of Hyperparameter Tuning
 <img width="976" height="229" alt="Result of Hyperparameter Tuning " src="https://github.com/user-attachments/assets/3eb75613-f0cb-4e64-bc2c-74b68c89cc81" />
 
 
