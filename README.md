@@ -95,8 +95,8 @@ The dataset used in this project was sourced from the Kaggle HF Dataset, which c
 
 The figure 1 below shows the information of the dataset after cleaning. It clearly indicated that there are no missing values in all the 299 entries for each column.
 
-
 Figure 1: Dataset Information
+
 <img width="528" height="295" alt="dataset info" src="https://github.com/user-attachments/assets/4da9e640-2624-42c8-afd0-57f3e5195199" />
 
 
@@ -185,7 +185,7 @@ After the training and the testing of the models on the dataset, a baseline mode
 model. Logistic regression, KNN and random forest classification demonstrated a model accuracy of 0.78, 0.59, 0.74 respectively.
 Figure 6 is the representation of the baseline model accuracy scores 
 
-Figure 6: Baseline model Scores
+Figure 6: Baseline Model Scores
 <img width="835" height="763" alt="new accuracy score" src="https://github.com/user-attachments/assets/e94d2a72-49d7-4900-ae6a-1a62fb919fee" />
 
 #### Hyperparameter Tuning
@@ -212,13 +212,13 @@ Recall: Recall measures the proportion of true positive among all actual positiv
 
 F1-Score: The harmonic mean of precision and recall, providing a single metric that balances both.
 
-Figure 7: Evaluation Metrics
+Figure 8: Evaluation Metrics
 <img width="1003" height="318" alt="Evaluation metrics" src="https://github.com/user-attachments/assets/66cfe55e-4021-48b5-b5d2-0ff2c7ad8dd1" />
 
 
 AUC-ROC Curve: The area under the receiver operating characteristic curve (AUC-ROC) is used to assess the model's ability to distinguish between classes (e.g., mortality vs. survival). 
 
-Figure 8: AOC-ROC Curve of the Best Model
+Figure 9: AOC-ROC Curve of the Best Model
 <img width="746" height="693" alt="AOC NEW" src="https://github.com/user-attachments/assets/f9f5ba72-f446-429c-ad90-847f350e09e6" />
  
 #### Confusion Matrix
@@ -231,14 +231,15 @@ The matrix displays the number of instances produced by the model on the test da
 - False Positive (FP):The model incorrectly predicted a positive outcome (the actual outcome was negative). Also known as a Type I error.
 - False Negative (FN): The model incorrectly predicted a negative outcome (the actual outcome was positive). Also known as a Type II error (GeeksforGeeks, 2024).
 
-Figure 9 shows the basic structure of a confusion matrix while
+The basic structure of a confusion matrix is well represented in figure 10
 
-Figure 9: Basic Structure of a confusion Matrix
+Figure 10: Basic Structure of a confusion Matrix
 <img width="651" height="544" alt="basic structure of confusion matrix" src="https://github.com/user-attachments/assets/aba505c1-be6a-4618-a84e-d88a3ebbec05" />
 
-Figure 10 shows the confusion matrix of the best model for predicting HF mortality.
+The confusion matrix of the best model for predicting HF mortality is represented in figure 11
 
-Figure 10: Confusion Matrix of the Best Model
+Figure 11: Confusion Matrix of the Best Model
+
 <img width="456" height="401" alt="Confusion Matrix" src="https://github.com/user-attachments/assets/238488b4-a360-4b3b-b287-08c04311c40d" />
 
 #### Discussions
