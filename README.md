@@ -93,10 +93,10 @@ The dataset used in this project was sourced from the Kaggle HF Dataset, which c
  1. Checked for Missing and duplicate values to ensure data quality and integrity 
  2. Validation of data types and formats to ensure compatibiity  with analytical operations
 
-The figure 1.1 below shows the information of the dataset after cleaning. It clearly indicated that there are no missing values in all the 299 entries for each column.
+The figure 1 below shows the information of the dataset after cleaning. It clearly indicated that there are no missing values in all the 299 entries for each column.
 
 
-
+Figure 1: Dataset Information
 <img width="528" height="295" alt="dataset info" src="https://github.com/user-attachments/assets/4da9e640-2624-42c8-afd0-57f3e5195199" />
 
 
@@ -106,6 +106,7 @@ Correlation matrix for EDA: A correlation matrix showing the correlation coeffic
 
 Figure 1.2 represents a correlation matrix that explores the relationship between the various variables in the dataset. Serum creatinine shows the greatest positive strength having 0.29 while ejection fraction shows the greatest negative strength having -0.27.
 
+Figure 2: Confusion Matrix
 <img width="692" height="542" alt="Correlation Matrix" src="https://github.com/user-attachments/assets/fdaedacd-1563-480f-a656-cf331b87daf5" />
 
 
@@ -113,8 +114,9 @@ Figure 1.2 represents a correlation matrix that explores the relationship betwee
 
 Feature Selection is the process of selecting relevant features (variables) from the original dataset for model training. Relevant features were selected based on clinical significance, correlation analysis, and feature importance from preliminary models. This step helped reduce the dimensionality of the dataset and improves model performance.
 
-Figure 1.3 shows the feature importance of all the variables in the dataset. Features with importance less than 0.05 were dropped why features with importance greater than 0.05 were used for modelling.
+Figure 3 shows the feature importance of all the variables in the dataset. Features with importance less than 0.05 were dropped why features with importance greater than 0.05 were used for modelling.
 
+Figure 3: Feature Importance
 <img width="1159" height="614" alt="Feature importance" src="https://github.com/user-attachments/assets/461c6e8a-5b6f-48ba-9483-35b08d6a00fe" />
 
 
@@ -123,13 +125,14 @@ An imbalanced dataset is a dataset where the classes in the target variable are 
 
 The imbalanced dataset was rendered balanced using the SMOTE method (Synthetic Minority Over-sampling Technique) to prevent the models from being biased in their predictions and accuracies.  
 
-Figure 1.4 shows the bar chart distribution of the two classes in the target variable. The label “0” represents “no death by HF” while the label “1” represents “death by HF”. The ratio of “no death by HF” to “death by HF” is     203 : 96. This represent an imbalanced dataset.
+Figure 4 shows the bar chart distribution of the two classes in the target variable. The label “0” represents “no death by HF” while the label “1” represents “death by HF”. The ratio of “no death by HF” to “death by HF” is     203 : 96. This represent an imbalanced dataset.
 
-
+Figure 4: Target Variable Distribution
 <img width="768" height="563" alt="target variable" src="https://github.com/user-attachments/assets/355c67eb-5612-4837-88dd-02d8496615d3" />
                                                
-Figure 1.5 shows the bar chart distribution of the two classes in the target variable after the dataset was rendered balanced using the SMOTE method.
+Figure 5 shows the bar chart distribution of the two classes in the target variable after the dataset was rendered balanced using the SMOTE method.
 
+Figure 5: Balanced Dataset
  <img width="782" height="565" alt="BALANCED DATASET" src="https://github.com/user-attachments/assets/e18b8a11-3da6-47b5-8ab6-dae7bdbd7a93" />
 
 
@@ -180,8 +183,9 @@ models to improve their predicting accuracies.
 #### Model Accuracy
 After the training and the testing of the models on the dataset, a baseline model accuracy was achieved for each 
 model. Logistic regression, KNN and random forest classification demonstrated a model accuracy of 0.78, 0.59, 0.74 respectively.
-Figure 1.6 is the representation of the baseline model accuracy scores 
+Figure 6 is the representation of the baseline model accuracy scores 
 
+Figure 6: Baseline model Scores
 <img width="835" height="763" alt="new accuracy score" src="https://github.com/user-attachments/assets/e94d2a72-49d7-4900-ae6a-1a62fb919fee" />
 
 #### Hyperparameter Tuning
@@ -192,6 +196,7 @@ Figure 1.6 is the representation of the baseline model accuracy scores
 
 Random Forest Classifier demonstrated the highest accuracy of 0.87 and was picked to be the representation model.
 
+Figure 7: Hyperparameter Tuning
 <img width="976" height="229" alt="Result of Hyperparameter Tuning " src="https://github.com/user-attachments/assets/3eb75613-f0cb-4e64-bc2c-74b68c89cc81" />
 
 
@@ -207,12 +212,13 @@ Recall: Recall measures the proportion of true positive among all actual positiv
 
 F1-Score: The harmonic mean of precision and recall, providing a single metric that balances both.
 
-
+Figure 7: Evaluation Metrics
 <img width="1003" height="318" alt="Evaluation metrics" src="https://github.com/user-attachments/assets/66cfe55e-4021-48b5-b5d2-0ff2c7ad8dd1" />
 
 
 AUC-ROC Curve: The area under the receiver operating characteristic curve (AUC-ROC) is used to assess the model's ability to distinguish between classes (e.g., mortality vs. survival). 
 
+Figure 8: AOC-ROC Curve of the Best Model
 <img width="746" height="693" alt="AOC NEW" src="https://github.com/user-attachments/assets/f9f5ba72-f446-429c-ad90-847f350e09e6" />
  
 #### Confusion Matrix
@@ -225,11 +231,14 @@ The matrix displays the number of instances produced by the model on the test da
 - False Positive (FP):The model incorrectly predicted a positive outcome (the actual outcome was negative). Also known as a Type I error.
 - False Negative (FN): The model incorrectly predicted a negative outcome (the actual outcome was positive). Also known as a Type II error (GeeksforGeeks, 2024).
 
-Figure 4.4 shows the basic structure of a confusion matrix while
+Figure 9 shows the basic structure of a confusion matrix while
+
+Figure 9: Basic Structure of a confusion Matrix
 <img width="651" height="544" alt="basic structure of confusion matrix" src="https://github.com/user-attachments/assets/aba505c1-be6a-4618-a84e-d88a3ebbec05" />
 
-Figure 4.5 shows the confusion matrix of the best model for predicting HF mortality.
+Figure 10 shows the confusion matrix of the best model for predicting HF mortality.
 
+Figure 10: Confusion Matrix of the Best Model
 <img width="456" height="401" alt="Confusion Matrix" src="https://github.com/user-attachments/assets/238488b4-a360-4b3b-b287-08c04311c40d" />
 
 #### Discussions
